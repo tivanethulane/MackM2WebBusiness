@@ -1,1 +1,0 @@
-This a website for a start up business called MackM2 Web Business
