@@ -1,0 +1,171 @@
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Blue-Purple gradient background */
+  padding: 20px 0;
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar brand container */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Circular container for the icon */
+.navbar-brand .icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;  /* Circle size */
+  height: 40px; /* Circle size */
+  border-radius: 50%; /* Make it circular */
+  border: 3px solid #28a745; /* Green border */
+  margin-right: 10px;  /* Space between the icon circle and company name */
+  position: relative;
+  animation: rotateBorder 3s infinite linear; /* Animation for rotating border */
+  transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+/* Rotating effect for the circle border */
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hover effect to scale the circle */
+.navbar-brand .icon-circle:hover {
+  transform: scale(1.1); /* Enlarge the circle slightly on hover */
+}
+
+/* Icon inside the circle */
+.navbar-brand .icon-circle i {
+  font-size: 18px; /* Adjust the size of the icon */
+  color: #28a745; /* Green icon color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for icon color */
+.navbar-brand .icon-circle:hover i {
+  color: white; /* Change icon color when hovered */
+}
+
+.navbar-brand:hover {
+  color: white; /* Ensure the text stays white on hover */
+}
+
+/* Nav link styles */
+.navbar-nav .nav-item .nav-link {
+  color: white; /* Default color for nav links */
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for color and scale */
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #00aced; /* Change link color on hover (blue) */
+  transform: scale(1.1); /* Scale the link up on hover */
+}
+
+/* Active link styles */
+.navbar-nav .nav-item .nav-link.active {
+  color: #00aced; /* Active link color (blue) */
+  font-size: 18px; /* Increase font size for active link */
+  transform: scale(1.2); /* Make the active link larger */
+}
+
+/* Add responsive navbar styling if needed */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 10px 0;
+  }
+}
+
+/* Navbar collapse (for small screens) */
+.navbar-collapse {
+  position: static;
+  display: flex; /* Flex layout for horizontal navbar items */
+}
+
+/* Adjust for small screens */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Start off-screen to the right */
+    height: 50vh; /* Full height */
+    background-color: #343a40; /* Match the navbar's background */
+    width: 110px; /* Set a fixed width for the menu */
+    transition: right 0.3s ease; /* Smooth sliding effect */
+    z-index: 1050; /* Ensure the menu appears above other content */
+    margin-top: 65px;
+    padding:0; /* Remove any padding */
+  }
+
+  /* When the menu is open, it will slide in from the right */
+  .navbar-collapse.show {
+    right: 0;
+  }
+
+  /* Optional: Ensure the navbar is on top of the sliding menu */
+  .navbar {
+    z-index: 1060;
+  }
+
+  /* Make the navbar-toggler icon visible */
+  .navbar-toggler-icon {
+    background-color: transparent;
+  }
+}
+
+/* Customize the toggle button icon */
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+}
+
+.navbar-toggler i {
+  font-size: 30px; /* Adjust the size of the icon */
+  color: white;    /* Make sure the icon color contrasts against the dark background */
+}
+
+/* Navbar items with background to fit text (e.g., "Services") */
+.navbar-nav .nav-item {
+  display: inline-block;
+  padding: 0 10px; /* Add minimal horizontal padding */
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: inline-block;
+  background-color: #343a40; /* Match background color */
+  padding: 10px 15px; /* Make the button-sized background fit the text */
+  border-radius: 5px; /* Optional: Add border radius for smooth corners */
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #007bff; /* Highlight active link with a blue background */
+}
+
+/* Ensure no extra width beyond the largest word */
+.navbar-nav .nav-item .nav-link {
+  width: auto; /* Allow width to adjust to the text length */
+  min-width: 80px; /* Ensure a minimum width, can be adjusted */
+  text-align: center;
+}
