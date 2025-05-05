@@ -59,7 +59,8 @@ const Home = () => {
 
           <Col md={4}>
             <Card>
-            <Card.Img variant="top" src="internetofthings.png" alt="IoT Solutions" />
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/internetofthings.png`} alt="IoT Solutions" />
+            
 
               <Card.Body>
                 <Card.Title>IoT Solutions</Card.Title>
