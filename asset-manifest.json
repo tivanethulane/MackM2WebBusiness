@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/MackM2WebBusiness/static/css/main.5f7d4bef.css",
-    "main.js": "/MackM2WebBusiness/static/js/main.fc842cac.js",
-    "static/js/453.419a5d54.chunk.js": "/MackM2WebBusiness/static/js/453.419a5d54.chunk.js",
-    "static/media/fontawesome-webfont.svg?v=4.7.0": "/MackM2WebBusiness/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/fontawesome-webfont.eot": "/MackM2WebBusiness/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
-    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/MackM2WebBusiness/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
-    "static/media/fontawesome-webfont.woff?v=4.7.0": "/MackM2WebBusiness/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/MackM2WebBusiness/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "index.html": "/MackM2WebBusiness/index.html",
-    "main.5f7d4bef.css.map": "/MackM2WebBusiness/static/css/main.5f7d4bef.css.map",
-    "main.fc842cac.js.map": "/MackM2WebBusiness/static/js/main.fc842cac.js.map",
-    "453.419a5d54.chunk.js.map": "/MackM2WebBusiness/static/js/453.419a5d54.chunk.js.map"
+    "main.css": "/static/css/main.abe0176d.css",
+    "main.js": "/static/js/main.e63e1661.js",
+    "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "index.html": "/index.html",
+    "main.abe0176d.css.map": "/static/css/main.abe0176d.css.map",
+    "main.e63e1661.js.map": "/static/js/main.e63e1661.js.map",
+    "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5f7d4bef.css",
-    "static/js/main.fc842cac.js"
+    "static/css/main.abe0176d.css",
+    "static/js/main.e63e1661.js"
   ]
 }
