@@ -47,7 +47,7 @@ const About = () => {
                 <Card.Body>
                   <Card.Title>Project Management</Card.Title>
                   <Card.Text>
-                    Kwoledge is the Project Management of MackM2 Web Business and an expert in software development and IoT systems.
+                    Mr Kwoledge is the Project Management of MackM2 Web Business and an expert in software development and IoT systems.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -58,7 +58,7 @@ const About = () => {
                 <Card.Body>
                   <Card.Title>CEO</Card.Title>
                   <Card.Text>
-                    Mr Ngobeni is the founder of MackM2 Web Business and an expert in software development and IoT systems.
+                    Mr Mgobeni is the founder of MackM2 Web Business and an expert in software development and IoT systems.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -75,9 +75,9 @@ const About = () => {
               <Card className="mb-4">
                 <Card.Img variant="top" src="/marketing.jpg" />
                 <Card.Body>
-                  <Card.Title>Marketing Management</Card.Title>
+                  <Card.Title>Marketing and Administration</Card.Title>
                   <Card.Text>
-                    She's a Marketing Management of MackM2 Web Business and an expert in Business Management and System Analysis.
+                  Ms Nompilo Manqele is Marketing and Administration of MackM2 Web Business and an expert in Business Management and System Analysis.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -88,7 +88,7 @@ const About = () => {
                 <Card.Body>
                   <Card.Title>Developer Lead</Card.Title>
                   <Card.Text>
-                    Mr Ngobeni is a Lead Developer at MackM2 Web Business, specializing in programming languages and machine learning.
+                  Mr Paradise Mgobeni is a Lead Developer at MackM2 Web Business, specializing in programming languages and machine learning.
                   </Card.Text>
                 </Card.Body>
               </Card>
