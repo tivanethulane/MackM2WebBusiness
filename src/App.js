@@ -81,17 +81,19 @@ function App() {
           profile={profile}
         />
         <div style={{ marginTop: '70px' }}></div>
-        <div className="flex-grow-1">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/users" element={<Users />} />
-            <Route path="/rating" element={<Rating />} />
-          </Routes>
-        </div>
+        <Router basename={process.env.PUBLIC_URL}> {/* Important for GitHub Pages */}
+      <div className="flex-grow-1">
+        <Routes>
+          <Route path="/" element={<Home />} /> {/* Home page route */}
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/users" element={<Users />} />
+          <Route path="/rating" element={<Rating />} />
+        </Routes>
+      </div>
+    </Router>
         {showFooter && <Footer />}
         <LoginModal
           show={showLoginModal}
