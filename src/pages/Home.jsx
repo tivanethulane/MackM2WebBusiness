@@ -31,7 +31,8 @@ const Home = () => {
         <Row className="my-4">
           <Col md={4}>
             <Card>
-              <Card.Img variant="top" src="/tuturingOicture.png" alt="Tutoring" />
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/tuturingOicture.png`} alt="Tutoring" />
+
               <Card.Body>
                 <Card.Title>Tutoring</Card.Title>
                 <Card.Text>
@@ -44,7 +45,8 @@ const Home = () => {
 
           <Col md={4}>
             <Card>
-              <Card.Img variant="top" src="/DEveloperPicture.png" alt="Technology Projects" />
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/DEveloperPicture.png`} alt="Technology Projects" />
+
               <Card.Body>
                 <Card.Title>Technology Projects</Card.Title>
                 <Card.Text>
@@ -57,7 +59,8 @@ const Home = () => {
 
           <Col md={4}>
             <Card>
-              <Card.Img variant="top" src="internetofthings.png" alt="IoT Solutions" />
+            <Card.Img variant="top" src="internetofthings.png" alt="IoT Solutions" />
+
               <Card.Body>
                 <Card.Title>IoT Solutions</Card.Title>
                 <Card.Text>
@@ -75,7 +78,8 @@ const Home = () => {
         <h3 className="text-center">Why Choose Us?</h3>
         <Row className="my-4">
           <Col md={4}>
-            <img src="/tutoring-image.jpeg" alt="Personalized Tutoring" className="img-fluid rounded mb-3" />
+          <img src={`${process.env.PUBLIC_URL}/tutoring-image.jpeg`} alt="Personalized Tutoring" className="img-fluid rounded mb-3" />
+
             <h4>Personalized Tutoring</h4>
             <p>
               Our expert instructors work one-on-one with students to ensure that learning is tailored to their individual needs and pace.
@@ -84,7 +88,8 @@ const Home = () => {
           </Col>
 
           <Col md={4}>
-            <img src="/handsOnproct.png" alt="Hands-on Projects" className="img-fluid rounded mb-3" />
+          <img src={`${process.env.PUBLIC_URL}/handsOnproct.png`} alt="Hands-on Projects" className="img-fluid rounded mb-3" />
+
             <h4>Hands-on Projects</h4>
             <p>
               We believe in learning by doing! Our hands-on projects cover everything from basic coding to advanced IoT systems, providing real-world experience.
@@ -93,7 +98,8 @@ const Home = () => {
           </Col>
 
           <Col md={4}>
-            <img src="/IOT.png" alt="IoT Solutions" className="img-fluid rounded mb-3" />
+          <img src={`${process.env.PUBLIC_URL}/IOT.png`} alt="IoT Solutions" className="img-fluid rounded mb-3" />
+
             <h4>IoT Solutions</h4>
             <p>
               Explore the fascinating world of the Internet of Things (IoT). We offer expert guidance on creating connected devices, smart homes, and advanced IoT systems.
@@ -115,7 +121,8 @@ const Home = () => {
           Our team consists of experienced professionals from diverse backgrounds in technology, education, and business. We are passionate about
           helping you succeed in the rapidly evolving world of tech and IoT.
         </p>
-        <img src="/AboutUs.png" alt="MackM2 Web Business Team" className="img-fluid rounded" />
+        <img src={`${process.env.PUBLIC_URL}/AboutUs.png`} alt="MackM2 Web Business Team" className="img-fluid rounded" />
+
       </section>
 
       {/* Modal for More Information */}

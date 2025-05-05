@@ -43,7 +43,8 @@ const About = () => {
           <Row className="justify-content-center">
             <Col md={4} sm={6}>
               <Card className="mb-4">
-                <Card.Img variant="top" src="/kwowledgeProjectmanager.jpg" />
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/kwowledgeProjectmanager.jpg`} />
+
                 <Card.Body>
                   <Card.Title>Project Management</Card.Title>
                   <Card.Text>
@@ -54,7 +55,8 @@ const About = () => {
             </Col>
             <Col md={4} sm={6}>
               <Card className="mb-4">
-                <Card.Img variant="top" src="/ceoFounder.jpg" />
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/ceoFounder.jpg`} />
+
                 <Card.Body>
                   <Card.Title>CEO</Card.Title>
                   <Card.Text>
@@ -73,7 +75,8 @@ const About = () => {
           <Row className="justify-content-center">
             <Col md={4} sm={6}>
               <Card className="mb-4">
-                <Card.Img variant="top" src="/marketing.jpg" />
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/marketing.jpg`} alt="Marketing" />
+
                 <Card.Body>
                   <Card.Title>Marketing and Administration</Card.Title>
                   <Card.Text>
@@ -84,7 +87,8 @@ const About = () => {
             </Col>
             <Col md={4} sm={6}>
               <Card className="mb-4">
-                <Card.Img variant="top" src="/Developer.jpg" />
+              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/Developer.jpg`} alt="Developer" />
+
                 <Card.Body>
                   <Card.Title>Developer Lead</Card.Title>
                   <Card.Text>
