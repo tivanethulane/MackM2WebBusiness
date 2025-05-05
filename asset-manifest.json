@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MackM2WebBusiness/static/css/main.5f7d4bef.css",
-    "main.js": "/MackM2WebBusiness/static/js/main.f28234d9.js",
+    "main.js": "/MackM2WebBusiness/static/js/main.e8063695.js",
     "static/js/453.419a5d54.chunk.js": "/MackM2WebBusiness/static/js/453.419a5d54.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/MackM2WebBusiness/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/MackM2WebBusiness/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
@@ -10,11 +10,11 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/MackM2WebBusiness/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/MackM2WebBusiness/index.html",
     "main.5f7d4bef.css.map": "/MackM2WebBusiness/static/css/main.5f7d4bef.css.map",
-    "main.f28234d9.js.map": "/MackM2WebBusiness/static/js/main.f28234d9.js.map",
+    "main.e8063695.js.map": "/MackM2WebBusiness/static/js/main.e8063695.js.map",
     "453.419a5d54.chunk.js.map": "/MackM2WebBusiness/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f7d4bef.css",
-    "static/js/main.f28234d9.js"
+    "static/js/main.e8063695.js"
   ]
 }
