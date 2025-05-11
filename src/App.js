@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -81,19 +81,18 @@ function App() {
           profile={profile}
         />
         <div style={{ marginTop: '70px' }}></div>
-        <Router basename={process.env.PUBLIC_URL}> {/* Important for GitHub Pages */}
-      <div className="flex-grow-1">
-        <Routes>
-          <Route path="/" element={<Home />} /> {/* Home page route */}
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/rating" element={<Rating />} />
-        </Routes>
-      </div>
-    </Router>
+        <div className="flex-grow-1">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/users" element={<Users />} />
+              <Route path="/rating" element={<Rating />} />
+              
+            </Routes>
+        </div>
         {showFooter && <Footer />}
         <LoginModal
           show={showLoginModal}
