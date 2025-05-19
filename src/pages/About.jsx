@@ -118,7 +118,7 @@ const About = () => {
                   {/* <Button variant="secondary" href="/services">Learn More</Button> */}
 
                              <Link to="/contact">
-  <Button variant="secondary">Learn More</Button>
+  <Button variant="primary">Learn More</Button>
 </Link>
                 </Card.Body>
               </Card>
@@ -133,7 +133,7 @@ const About = () => {
                   {/* <Button variant="secondary" href="/services">Learn More</Button> */}
 
                              <Link to="/contact">
-  <Button variant="secondary">Learn More</Button>
+  <Button variant="primary">Learn More</Button>
 </Link>
 
                 </Card.Body>
@@ -148,7 +148,7 @@ const About = () => {
                   </Card.Text>
                   {/* <Button variant="secondary" href="/services">Learn More</Button> */}
                   <Link to="/contact">
-  <Button variant="secondary">Learn More</Button>
+  <Button variant="primary">Learn More</Button>
 </Link>
                 </Card.Body>
               </Card>
@@ -168,7 +168,7 @@ const About = () => {
             {/* <Button variant="primary" href="/contact" size="lg">Contact Us</Button> */}
 
             <Link to="/contact">
-  <Button variant="secondary">Learn More</Button>
+  <Button variant="primary">Learn More</Button>
 </Link>
           </div>
         </Col>

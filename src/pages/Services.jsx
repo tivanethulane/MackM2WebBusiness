@@ -36,7 +36,7 @@ const Services = () => {
             {/* <Button variant="primary" href="/contact" size="lg">Contact Us for IoT Solutions</Button> */}
 
             <Link to="/services">
-  <Button variant="secondary">Contact Us for IoT Solutions</Button>
+  <Button variant="primary"  >Contact Us for IoT Solutions</Button>
 </Link>
           </Col>
         </Row>
@@ -67,7 +67,7 @@ const Services = () => {
             {/* <Button variant="primary" href="/contact" size="lg">Get Started with Tutoring</Button> */}
 
             <Link to="/services">
-  <Button variant="secondary">Get Started with Tutoring</Button>
+  <Button variant="primary">Get Started with Tutoring</Button>
 </Link>
           </Col>
         </Row>
@@ -98,7 +98,7 @@ const Services = () => {
             {/* <Button variant="primary" href="/contact" size="lg">Start Your IT Project with Us</Button> */}
 
                 <Link to="/services">
-  <Button variant="secondary">Start Your IT Project with Us</Button>
+  <Button variant="primary">Start Your IT Project with Us</Button>
 </Link>
           </Col>
         </Row>

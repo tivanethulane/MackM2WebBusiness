@@ -65,7 +65,7 @@ const Navbar = ({ onLoginClick, onLogout, isLoggedIn, profile, onSignupClick }) 
               </NavLink>
             </li>
 
-            {isLoggedIn ? (
+            {/* {isLoggedIn ? (
               <>
                 <li className="nav-item d-flex align-items-center text-white px-2">
                   Hello, <strong className="ms-1">{profile?.username}</strong>
@@ -89,7 +89,7 @@ const Navbar = ({ onLoginClick, onLogout, isLoggedIn, profile, onSignupClick }) 
                   </button>
                 </li>
               </>
-            )}
+            )} */}
           </ul>
         </div>
       </div>
