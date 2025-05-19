@@ -32,7 +32,11 @@ const About = () => {
                 We provide tailored learning experiences, focusing on practical knowledge and real-world problem-solving.
                 Our team is passionate about technology and helping others achieve their potential.
               </Card.Text>
-              <Button variant="primary" href="/contact">Get in Touch</Button>
+              {/* <Button variant="primary" href="/contact">Get in Touch</Button> */}
+
+                                   <Link to="/contact">
+  <Button variant="primary">Get in Touch</Button>
+</Link>
             </Card.Body>
           </Card>
         </Col>

@@ -35,7 +35,7 @@ const Services = () => {
           <Col className="text-center">
             {/* <Button variant="primary" href="/contact" size="lg">Contact Us for IoT Solutions</Button> */}
 
-            <Link to="/services">
+            <Link to="/about">
   <Button variant="primary"  >Contact Us for IoT Solutions</Button>
 </Link>
           </Col>
@@ -66,7 +66,7 @@ const Services = () => {
           <Col className="text-center">
             {/* <Button variant="primary" href="/contact" size="lg">Get Started with Tutoring</Button> */}
 
-            <Link to="/services">
+            <Link to="/about">
   <Button variant="primary">Get Started with Tutoring</Button>
 </Link>
           </Col>
@@ -97,7 +97,7 @@ const Services = () => {
           <Col className="text-center">
             {/* <Button variant="primary" href="/contact" size="lg">Start Your IT Project with Us</Button> */}
 
-                <Link to="/services">
+                <Link to="/about">
   <Button variant="primary">Start Your IT Project with Us</Button>
 </Link>
           </Col>
