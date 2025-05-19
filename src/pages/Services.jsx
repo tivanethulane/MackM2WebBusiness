@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaLaptopCode, FaChalkboardTeacher, FaProjectDiagram, FaMobileAlt, FaCog } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   return (
@@ -32,7 +33,11 @@ const Services = () => {
         </Row>
         <Row className="my-4">
           <Col className="text-center">
-            <Button variant="primary" href="/contact" size="lg">Contact Us for IoT Solutions</Button>
+            {/* <Button variant="primary" href="/contact" size="lg">Contact Us for IoT Solutions</Button> */}
+
+            <Link to="/services">
+  <Button variant="secondary">Contact Us for IoT Solutions</Button>
+</Link>
           </Col>
         </Row>
       </section>
@@ -59,7 +64,11 @@ const Services = () => {
         </Row>
         <Row className="my-4">
           <Col className="text-center">
-            <Button variant="primary" href="/contact" size="lg">Get Started with Tutoring</Button>
+            {/* <Button variant="primary" href="/contact" size="lg">Get Started with Tutoring</Button> */}
+
+            <Link to="/services">
+  <Button variant="secondary">Get Started with Tutoring</Button>
+</Link>
           </Col>
         </Row>
       </section>
@@ -86,7 +95,11 @@ const Services = () => {
         </Row>
         <Row className="my-4">
           <Col className="text-center">
-            <Button variant="primary" href="/contact" size="lg">Start Your IT Project with Us</Button>
+            {/* <Button variant="primary" href="/contact" size="lg">Start Your IT Project with Us</Button> */}
+
+                <Link to="/services">
+  <Button variant="secondary">Start Your IT Project with Us</Button>
+</Link>
           </Col>
         </Row>
       </section>
