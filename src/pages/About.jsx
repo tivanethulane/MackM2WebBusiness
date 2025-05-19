@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import './About.css'; // Custom CSS file for additional styling
+import { Link } from 'react-router-dom';
+
 
 const About = () => {
   return (
@@ -48,7 +50,7 @@ const About = () => {
                 <Card.Body>
                   <Card.Title>Project Management</Card.Title>
                   <Card.Text>
-                    Mr Kwoledge is the Project Management of MackM2 Web Business and an expert in software development and IoT systems.
+                    Mr knowledge is the Project Management of MackM2 Web Business and an expert in software development and IoT systems.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -75,7 +77,7 @@ const About = () => {
           <Row className="justify-content-center">
             <Col md={4} sm={6}>
               <Card className="mb-4">
-              <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/marketing.jpg`} alt="Marketing" />
+              <Card.Img variant="top"  className="rounded-image" src={`${process.env.PUBLIC_URL}/marketing.jpg`} alt="Marketing" />
 
                 <Card.Body>
                   <Card.Title>Marketing and Administration</Card.Title>
@@ -113,7 +115,11 @@ const About = () => {
                   <Card.Text>
                     Personalized tutoring sessions to help you master new technologies, coding, and more. We do all subjects for lower and higher education.
                   </Card.Text>
-                  <Button variant="secondary" href="/services">Learn More</Button>
+                  {/* <Button variant="secondary" href="/services">Learn More</Button> */}
+
+                             <Link to="/contact">
+  <Button variant="secondary">Learn More</Button>
+</Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -124,7 +130,12 @@ const About = () => {
                   <Card.Text>
                     From concept to execution, we help you build your own IoT projects or Web site to bring your ideas to life.
                   </Card.Text>
-                  <Button variant="secondary" href="/services">Learn More</Button>
+                  {/* <Button variant="secondary" href="/services">Learn More</Button> */}
+
+                             <Link to="/contact">
+  <Button variant="secondary">Learn More</Button>
+</Link>
+
                 </Card.Body>
               </Card>
             </Col>
@@ -135,7 +146,10 @@ const About = () => {
                   <Card.Text>
                     We provide expert advice on technology strategy and innovation to help businesses grow. We always deliver the best for our customers.
                   </Card.Text>
-                  <Button variant="secondary" href="/services">Learn More</Button>
+                  {/* <Button variant="secondary" href="/services">Learn More</Button> */}
+                  <Link to="/contact">
+  <Button variant="secondary">Learn More</Button>
+</Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -151,7 +165,11 @@ const About = () => {
             Have any questions or want to work with us? Feel free to reach out and get in touch with our team!
           </p>
           <div className="d-flex justify-content-center">
-            <Button variant="primary" href="/contact" size="lg">Contact Us</Button>
+            {/* <Button variant="primary" href="/contact" size="lg">Contact Us</Button> */}
+
+            <Link to="/contact">
+  <Button variant="secondary">Learn More</Button>
+</Link>
           </div>
         </Col>
       </Row>

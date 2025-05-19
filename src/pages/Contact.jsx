@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <Container>
       <header className="text-center my-5">
-        <h1>Contact Us</h1>
+        <h1>Get in touch:</h1>
         <p>If you have any questions, feel free to reach out to us!</p>
       </header>
 
@@ -51,10 +51,10 @@ const Contact = () => {
         <h2 className="text-center">Referral & Payment Info</h2>
         <p className="text-center">
           We value your referrals! If you refer a friend or colleague to MackM2 Web Business, you will earn a reward. Once your referral
-          completes their first project or tutoring session, you will receive a via PayPal.
+          completes their first project or tutoring session, you will receive a free service on your next purchase note this we are the one who decides what will be free.
         </p>
         <p className="text-center">
-          <strong>Payment Methods Accepted:</strong> PayPal, Credit Card, Debit Card
+          <strong>What payment methods are accepted?</strong> We accept PayPal, Credit card and Debit Card. Unfortunately, we do not accept... (If any).
         </p>
       </section>
 
@@ -96,14 +96,14 @@ const Contact = () => {
         <Row className="my-4">
           <Col md={6} className="text-center">
             <h5><FaMapMarkerAlt size={30} className="mb-2" /> Physical Address</h5>
-            <p>For now we work online we will update all our customers when find an office</p>
+            <p>Currently, we operate online and will update all our customers once we locate an office.</p>
           </Col>
           <Col md={6} className="text-center">
             <h5><FaPhoneAlt size={30} className="mb-2" /> Business Hours</h5>
             <p>
               Monday to Friday: 08:00 AM - 18:00 PM <br />
               Saturday: 10:00 AM - 04:00 PM <br />
-              Sunday: Closed
+              Sunday and Public Holidays: Closed
             </p>
           </Col>
         </Row>
@@ -141,7 +141,7 @@ const Contact = () => {
       </section>
 
       {/* Location Map */}
-      <section className="my-5">
+      {/* <section className="my-5">
         <h2 className="text-center">Visit Us on the Map</h2>
         <div className="text-center">
           <iframe
@@ -149,7 +149,7 @@ const Contact = () => {
             width="600" height="450" frameBorder="0" style={{border: 0}} allowFullScreen=""
             aria-hidden="false" tabIndex="0"></iframe>
         </div>
-      </section>
+      </section> */}
 
       {/* Modal for Success Message */}
       <Modal show={showModal} onHide={handleCloseModal}>
