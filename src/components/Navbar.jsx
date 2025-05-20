@@ -49,7 +49,7 @@ const Navbar = ({ onLoginClick, onLogout, isLoggedIn, profile, onSignupClick }) 
                 Home
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item thulane">
               <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setIsNavOpen(false)}>
                 About
               </NavLink>
