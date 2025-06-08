@@ -42,7 +42,7 @@ const Navbar = ({ onLoginClick, onLogout, isLoggedIn, profile, onSignupClick }) 
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarNav">
+        <div className={`navbar-collapse custom-collapse ${isNavOpen ? 'show' : ''}`}id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'} onClick={() => setIsNavOpen(false)}>

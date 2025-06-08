@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Card, Button, ListGroup } from 'react-bootstrap';
 import './About.css'; // Custom CSS file for additional styling
 import { Link } from 'react-router-dom';
+import  './custom.css'
 
 
 const About = () => {
@@ -20,7 +21,7 @@ const About = () => {
       <Row>
         <Col md={6}>
           <h3>Our Mission</h3>
-          <p>
+          <p class="mb-4 card paragraph1">
             At MackM2 Web Business, we aim to make cutting-edge technology accessible to everyone. We provide personalized tutoring services and offer expertise in various technology domains, including IoT and software development.
           </p>
         </Col>
@@ -54,7 +55,7 @@ const About = () => {
                 <Card.Body>
                   <Card.Title>Project Management</Card.Title>
                   <Card.Text>
-                    Mr knowledge is the Project Management of MackM2 Web Business and an expert in software development and IoT systems.
+                    Mr Knowledge Mgobeni  is the Project Management of MackM2 Web Business and an expert in software development and IoT systems.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -66,7 +67,7 @@ const About = () => {
                 <Card.Body>
                   <Card.Title>CEO</Card.Title>
                   <Card.Text>
-                    Mr Mgobeni is the founder of MackM2 Web Business and an expert in software development and IoT systems.
+                    Mr Macksedeck Mgobeni is the founder of MackM2 Web Business and an expert in software development and IoT systems.
                   </Card.Text>
                 </Card.Body>
               </Card>

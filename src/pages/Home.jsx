@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button, Modal } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import  './custom.css'
 
 const Home = () => {
   // Modal State
@@ -31,12 +32,12 @@ const Home = () => {
         <Row className="my-4">
           <Col md={4}>
             <Card>
-            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/tuturingOicture.png`} alt="Tutoring" />
+            <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/LittleboyOnlineClass.jpeg`} alt="Tutoring" />
 
               <Card.Body>
                 <Card.Title>Tutoring</Card.Title>
                 <Card.Text>
-                  Get personalized tutoring in technology, IoT, and coding. Our experts guide you through practical and theoretical concepts.
+                  Get personalized tutoring in technology, IoT, and coding. Our experts guide primary and secondary school learners through both practical and theoretical concepts.
                 </Card.Text>
                 <Button variant="primary" onClick={handleShowModal}>Learn More</Button>
               </Card.Body>
@@ -50,7 +51,7 @@ const Home = () => {
               <Card.Body>
                 <Card.Title>Technology Projects</Card.Title>
                 <Card.Text>
-                  Explore our innovative projects, ranging from beginner to advanced. Start your journey with hands-on technology and IoT projects.
+                  Discover tailored IT solutions designed to streamline operations, enhance security, and drive digital transformation for businesses and individuals alike.
                 </Card.Text>
                 <Button variant="primary" onClick={goToServices}>Explore Projects</Button>
               </Card.Body>
@@ -65,7 +66,7 @@ const Home = () => {
               <Card.Body>
                 <Card.Title>IoT Solutions</Card.Title>
                 <Card.Text>
-                  Dive into the world of IoT with our complete solutions and guides. Learn how to build connected devices and smart systems.
+                 Dive into the world of IoT with our comprehensive solutions and expert-led guides. Learn to design, build, and deploy connected devices and intelligent systems using cutting-edge technologies and real-world applications.
                 </Card.Text>
                 <Button variant="primary" onClick={goToServices}>Learn IoT</Button>
               </Card.Body>
@@ -82,7 +83,7 @@ const Home = () => {
           <img src={`${process.env.PUBLIC_URL}/tutoring-image.jpeg`} alt="Personalized Tutoring" className="img-fluid rounded mb-3" />
 
             <h4>Personalized Tutoring</h4>
-            <p>
+            <p class="mb-4 card paragraph">
               Our expert instructors work one-on-one with students to ensure that learning is tailored to their individual needs and pace.
               Whether you are a beginner or looking to refine your skills, our tutoring services will accelerate your learning journey.
             </p>
@@ -92,7 +93,7 @@ const Home = () => {
           <img src={`${process.env.PUBLIC_URL}/handsOnproct.png`} alt="Hands-on Projects" className="img-fluid rounded mb-3" />
 
             <h4>Hands-on Projects</h4>
-            <p>
+            <p class="mb-4 card paragraph">
               We believe in learning by doing! Our hands-on projects cover everything from basic coding to advanced IoT systems, providing real-world experience.
               These projects will help you build tangible skills and prepare you for future challenges in technology and innovation.
             </p>
@@ -102,7 +103,7 @@ const Home = () => {
           <img src={`${process.env.PUBLIC_URL}/IOT.png`} alt="IoT Solutions" className="img-fluid rounded mb-3" />
 
             <h4>IoT Solutions</h4>
-            <p>
+            <p class="mb-4 card paragraph">
               Explore the fascinating world of the Internet of Things (IoT). We offer expert guidance on creating connected devices, smart homes, and advanced IoT systems.
               Whether you are a hobbyist or a professional, our IoT solutions are designed to help you master this growing field.
             </p>
@@ -111,14 +112,14 @@ const Home = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="my-5">
+      <section className="my-5 mb-4 card paragraph">
         <h2 className="text-center">About Us</h2>
-        <p>
+        <p >
           MackM2 Web Business is a leading provider of technology and IoT solutions. We empower individuals and businesses to achieve their goals through
           cutting-edge technology, expert tutoring, and innovative solutions. Whether you're starting your tech journey or looking to expand your
           expertise, we're here to guide you every step of the way.
         </p>
-        <p>
+        <p >
           Our team consists of experienced professionals from diverse backgrounds in technology, education, and business. We are passionate about
           helping you succeed in the rapidly evolving world of tech and IoT.
         </p>

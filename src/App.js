@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 import LoginModal from './pages/LoginModal';
 import SignupModal from './pages/SignupModal';
 import axios from 'axios';
-
+import CookieConsent from "react-cookie-consent";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 
@@ -31,6 +31,32 @@ function App() {
   const [showSignupModal, setShowSignupModal] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [profile, setProfile] = useState(null);
+
+
+  <CookieConsent
+        location="bottom"
+        buttonText="Accept"
+        declineButtonText="Reject"
+        enableDeclineButton
+        onAccept={() => {
+          console.log('Cookies accepted');
+          // Place your tracking/analytics script init here
+        }}
+        onDecline={() => {
+          console.log('Cookies declined');
+          // Optional: Disable analytics here
+        }}
+        cookieName="cookieConsent"
+        style={{ background: '#2B373B' }}
+        buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
+        declineButtonStyle={{ color: '#fff', background: '#999', fontSize: '13px' }}
+        expires={365}
+      >
+        This website uses cookies to enhance the user experience.{' '}
+        <a href="/privacy-policy" style={{ color: '#FFD700' }}>
+          Learn more
+        </a>
+      </CookieConsent>
 
   useEffect(() => {
     const handleScroll = () => {
@@ -109,6 +135,8 @@ function App() {
         />
       </div>
     </Router>
+
+    
   );
 }
 

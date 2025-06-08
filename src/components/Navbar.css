@@ -103,46 +103,60 @@
 }
 
 /* Adjust for small screens */
+/* Collapse menu for smaller screens */
 @media (max-width: 991px) {
-  .navbar-collapse {
+  .custom-collapse {
     position: fixed;
-    top: 1px;
-    right: -250px; /* Start off-screen to the right */
-    height: 30vh; /* Full height */
-    background-color: #343a40; /* Match the navbar's background */
-    width: 110px; /* Set a fixed width for the menu */
-    transition: right 0.3s ease; /* Smooth sliding effect */
-    z-index: 1050; /* Ensure the menu appears above other content */
-    margin-top: 65px;
-    padding:0; /* Remove any padding */
+    top: 65px; /* Below the navbar */
+    right: -260px; /* Hidden by default */
+    width: 103px;
+    height: calc(100vh - 65px); /* Full height minus navbar */
+    background:linear-gradient(45deg, #6a11cb, #2575fc);
+    transition: right 0.3s ease-in-out;
+    z-index: 1050;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem;
+    display: flex;
+     margin-bottom: 20px; /* 👈 Add margin below the whole background panel */
+    border-bottom-left-radius: 190px; /* Optional: for a rounded edge look */
+    border-bottom-right-radius: 12px;
   }
 
-  /* When the menu is open, it will slide in from the right */
-  .navbar-collapse.show {
+  .custom-collapse.show {
     right: 0;
+    /* padding-left: 147px; */
   }
 
-  /* Optional: Ensure the navbar is on top of the sliding menu */
-  .navbar {
-    z-index: 1060;
+  .navbar-nav {
+    width: 100%;
   }
 
-  /* Make the navbar-toggler icon visible */
-  .navbar-toggler-icon {
-    background-color: transparent;
+  .navbar-nav .nav-item {
+    width: 100%;
+    text-align: left;
+    margin: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    width: 100%;
+    padding: 10px;
+    display: block;
   }
 }
+
 
 /* Customize the toggle button icon */
 .navbar-toggler {
-  background-color: transparent;
   border: none;
+  background: transparent;
 }
 
-.navbar-toggler i {
-  font-size: 30px; /* Adjust the size of the icon */
-  color: white;    /* Make sure the icon color contrasts against the dark background */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' ...");
+  background-size: contain;
 }
+
 
 /* Navbar items with background to fit text (e.g., "Services") */
 .navbar-nav .nav-item {
